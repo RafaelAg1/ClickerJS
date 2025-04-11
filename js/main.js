@@ -103,7 +103,7 @@ botonCPS5.addEventListener("click",()=>{
         botonCPS5.textContent = `Mejora: +5 CPS Precio ${precioCPS5}`;
         textoPuntos.textContent = `Puntos: ${puntos}`;
         textoPuntosTienda.textContent = `Puntos: ${puntos}`;
-    }<<
+    }
 });
 abrirTienda.addEventListener("click",()=>{
     tiendaDiv.style.display="flex";
