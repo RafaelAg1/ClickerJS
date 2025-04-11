@@ -1,28 +1,29 @@
-let puntosEquipamientoPechera = 1;
+let puntosEquipamientoPechera = 0;
+let multiplicadorBase = 1;
 let puntosEquipamientoCasco = 0;
-let puntosEquipamiento=1;
+let puntosEquipamiento=0;
 export const pecheraMejoraPiel = {
     nombre: "Pechera de piel",
     precio: 50,
-    multiplicador: 1.25,
+    multiplicador: 0.25,
     comprado: false
 }
 export const pecheraMejoraHierro = {
     nombre: "Pechera de hierro",
     precio: 500,
-    multiplicador: 1.5,
+    multiplicador: 0.5,
     comprado: false
 }
 export const cascoMejoraPiel = {
     nombre: "Casco de piel",
     precio: 250,
-    multiplicador: 1.25,
+    multiplicador: 0.25,
     comprado: false
 }
 export const cascoMejoraHierro = {
     nombre: "Casco de hierro",
     precio: 2500,
-    multiplicador: 1.5,
+    multiplicador: 0.5,
     comprado: false
 }
 
@@ -39,7 +40,7 @@ function calcularPuntosEquipamiento(){
     if(cascoMejoraHierro.comprado==true){
         puntosEquipamientoCasco=cascoMejoraHierro.multiplicador;
     }
-    return puntosEquipamientoCasco+puntosEquipamientoPechera;
+    return multiplicadorBase+puntosEquipamientoCasco+puntosEquipamientoPechera;
 }
 
 export function puntosPorClickEquipamiento(){
